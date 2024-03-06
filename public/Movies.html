@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+</head>
+
+<body style="background-image: url(./img/Background.svg)" class="bg-[#121829] bg-cover bg-no-repeat">
+  <header class="pt-5 pb-5 bg-[#121829CC]  mb-7">
+    <div class="max-w-[1240px] mx-auto px-5 flex justify-between items-center ">
+      <a href="#" class="flex">
+        <img src="./img/icon.svg" alt="header logo">
+      </a>
+
+      <ul class="md:flex hidden gap-12 items-center">
+        <li><a href="./Movies.html" class="text-[#A8AEBF] font-semibold text-base leading-6 ">Kinolar</a></li>
+        <li><a href="./categorytop.html" class="text-[#A8AEBF] font-semibold text-base leading-6 ">Top 10 talik</a></li>
+        <li><a href="./suggest.html" class="text-[#A8AEBF] font-semibold text-base leading-6 flex items-center gap-2">Taklif etladi<img
+              src="./img/arrow-right.svg" alt="arrow-right"></a></li>
+      </ul>
+
+      <button class="flex md:hidden text-white text-2xl">
+        <i class="fa-solid fa-bars" id="hamburger-icon" style="color: #ffffff;"></i>
+      </button>
+    </div>
+
+    <div class="fixed top-0 transition-all z-10 -left-full w-full h-screen bg-[#121829]  pt-5 pb-10 px-8 flex flex-col"
+      id="header-responsive-menu">
+      <div class="flex justify-between mb-10" id="header-responsive-menu-top">
+        <a class="hover:opacity-70 transition-all" id="header-responsive-menu-top-logo" href="#">
+          <img src="./img/icon.svg" alt="header logo">
+        </a>
+        <button class="hover:opacity-70 transition-all" id="header-responsive-menu-top-close">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15" fill="none">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M7.99982 5.37868L2.69652 0.0753784L0.575195 2.1967L5.8785 7.5L0.575195 12.8033L2.69652 14.9246L7.99982 9.62132L13.3031 14.9246L15.4244 12.8033L10.1211 7.5L15.4244 2.1967L13.3031 0.0753784L7.99982 5.37868Z"
+              fill="white" />
+          </svg>
+        </button>
+      </div>
+
+
+      <ul class="flex items-center justify-center flex-col mb-8" id="header-responsive-menu-list">
+        <li class="w-[100%] text-center" id="header-responsive-menu-item"><a id="header-responsive-menu-link"
+            class="border-t border-[#FFFFFF] py-6 block text-[#FFFFFF] font-sans text-[20px] font-normal "
+            href="./Movies.html">Kinolar</a></li>
+        <li class="w-[100%] text-center" id="header-responsive-menu-item"><a id="header-responsive-menu-link"
+            class="border-t border-[#FFFFFF] py-6 block text-[#FFFFFF] font-sans text-[20px] font-normal " href="#">Top 10 talik</a></li>
+        <li class="w-[100%] text-center" id="header-responsive-menu-item"><a id="header-responsive-menu-link"
+            class="border-b border-t border-[#FFFFFF] py-6 block text-[#FFFFFF] font-sans text-[20px] font-normal "
+            href="./suggest.html">Taklif etladi</a></li>
+      </ul>
+
+      <!-- <button
+        class="border-[2px] border-[#FFFFFF] text-[#FFFFFF] rounded-md py-4 w-[100%] hover:opacity-70 transition-all"
+        id="header-responsive-menu-btn">LOGIN</button> -->
+
+      <ul class="flex justify-center mt-auto gap-10 items-center" id="header-responsive-menu-social-list">
+        <li id="header-responsive-menu-social-item">
+          <a target="_blank" id="header-responsive-menu-social-link" href="https://www.facebook.com/">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+        <li id="header-responsive-menu-social-item">
+          <a target="_blank" id="header-responsive-menu-social-link" href="https://twitter.com">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" viewBox="0 0 24 20" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M24 2.55699C23.117 2.94899 22.168 3.21299 21.172 3.33199C22.189 2.72299 22.97 1.75799 23.337 0.607986C22.386 1.17199 21.332 1.58199 20.21 1.80299C19.313 0.845986 18.032 0.247986 16.616 0.247986C13.437 0.247986 11.101 3.21399 11.819 6.29299C7.728 6.08799 4.1 4.12799 1.671 1.14899C0.381 3.36199 1.002 6.25699 3.194 7.72299C2.388 7.69699 1.628 7.47599 0.965 7.10699C0.911 9.38799 2.546 11.522 4.914 11.997C4.221 12.185 3.462 12.229 2.69 12.081C3.316 14.037 5.134 15.46 7.29 15.5C5.22 17.123 2.612 17.848 0 17.54C2.179 18.937 4.768 19.752 7.548 19.752C16.69 19.752 21.855 12.031 21.543 5.10599C22.505 4.41099 23.34 3.54399 24 2.55699Z"
+                fill="white" />
+            </svg>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </header>
+
+  <section class="py-6">
+    <div class="max-w-[1240px] px-5 mx-auto">
+      <h2 class="mb-6 font-semibold text-3xl leading-10 text-gray-400">All <span
+          class="text-base leading-6 ">(120)</span>
+      </h2>
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-6">
+        <a href="./item.html" class="bg-[#20283ECC] pt-2 px-2 pb-5 cursor-pointer">
+          <img class="w-full mb-6 flex" src="./img/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New-1.png"
+            alt="Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New">
+          <h1 class=" font-semibold text-base text-[#EBEEF5]">Black Widow</h1>
+        </a>
+        <a href="./item.html" class="bg-[#20283ECC] pt-2 px-2 pb-5 cursor-pointer">
+          <img class="w-full mb-6 flex" src="./img/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New-2.png"
+            alt="Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New">
+          <h1 class=" font-semibold text-base text-[#EBEEF5]">Shang Chi</h1>
+        </a>
+        <a href="./item.html" class="bg-[#20283ECC] pt-2 px-2 pb-5 cursor-pointer">
+          <img class="w-full mb-6 flex" src="./img/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New-3.png"
+            alt="Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New">
+          <h1 class=" font-semibold text-base text-[#EBEEF5]">Loki</h1>
+        </a>
+        <a href="./item.html" class="bg-[#20283ECC] pt-2 px-2 pb-5 cursor-pointer">
+          <img class="w-full mb-6 flex" src="./img/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New-4.png"
+            alt="Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New">
+          <h1 class=" font-semibold text-base text-[#EBEEF5]">How I Met Your Mother</h1>
+        </a>
+        <a href="./item.html" class="bg-[#20283ECC] pt-2 px-2 pb-5 cursor-pointer">
+          <img class="w-full mb-6 flex" src="./img/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New-5.png"
+            alt="Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New">
+          <h1 class=" font-semibold text-base text-[#EBEEF5]">Money Heist</h1>
+        </a>
+        <a href="./item.html" class="bg-[#20283ECC] pt-2 px-2 pb-5 cursor-pointer">
+          <img class="w-full mb-6 flex" src="./img/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New-6.png"
+            alt="Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New">
+          <h1 class=" font-semibold text-base text-[#EBEEF5]">Friends</h1>
+        </a>
+        <a href="./item.html" class="bg-[#20283ECC] pt-2 px-2 pb-5 cursor-pointer">
+          <img class="w-full mb-6 flex" src="./img/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New-7.png"
+            alt="Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New">
+          <h1 class=" font-semibold text-base text-[#EBEEF5]">The Big Bang Theory</h1>
+        </a>
+        <a href="./item.html" class="bg-[#20283ECC] pt-2 px-2 pb-5 cursor-pointer">
+          <img class="w-full mb-6 flex" src="./img/Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New-8.png"
+            alt="Shang-Chi-and-the-Legend-of-the-Ten-Rings-Releases-New">
+          <h1 class=" font-semibold text-base text-[#EBEEF5]">Two And a Half Men</h1>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>
